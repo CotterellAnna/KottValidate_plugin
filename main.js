@@ -3,7 +3,7 @@
         // plugin defaults
         let defaults = {
             optionalFields : [],
-            checkPasswordStrength: true,
+            checkPasswordStrength: false,
             passwordStrict: false,
             confirmPassword : [],
             radioInputs : [],
@@ -53,13 +53,14 @@
                 })
 
                 //check for passowrd strength
-                if(defaults.checkPasswordStrength == true && defaults.confirmPassword == false){
+                if(defaults.checkPasswordStrength == true){
                     $(":password").each(function(){
                         passwordStrenght($(this))
                     })
-                }else{
-                    passwordStrenght($(":password")[0])
                 }
+                // else{
+                //     passwordStrenght($(":password")[0])
+                // }
 
                 if(Object.keys(radioNames).length != 0){
                     validateRadios(radioNames)
