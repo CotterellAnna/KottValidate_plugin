@@ -58,9 +58,6 @@
                         passwordStrenght($(this))
                     })
                 }
-                // else{
-                //     passwordStrenght($(":password")[0])
-                // }
 
                 if(Object.keys(radioNames).length != 0){
                     validateRadios(radioNames)
