@@ -6,7 +6,6 @@
             checkPasswordStrength: false,
             passwordStrict: false,
             confirmPassword : [],
-            radioInputs : [],
             customFeedbackMsg : {},
             complete: function(){},
         }
